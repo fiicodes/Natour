@@ -1,5 +1,5 @@
 const express = require('express');
-const userController = require('./../controllers/userController');
+const userController = require('../controllers/userController');
 const router = express.Router();
 
 const getAllUsers = (req, res) => {
@@ -45,7 +45,7 @@ const deleteUser = (req, res) => {
 router
   .route('/')
   .get(userController.getAllUsers)
-  .post(userController.createUsers);
+  .post(userController.createUser);
 router
   .route('/:id')
   .patch(userController.updateUser)
