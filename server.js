@@ -16,14 +16,14 @@ mongoose
   })
   .then(() => console.log('Database Connected'));
 
-testTour
-  .save()
-  .then((doc) => {
-    console.log(doc);
-  })
-  .catch((err) => {
-    console.log('ERROR :', err);
-  });
+// testTour
+//   .save()
+//   .then((doc) => {
+//     console.log(doc);
+//   })
+//   .catch((err) => {
+//     console.log('ERROR :', err);
+//   });
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
