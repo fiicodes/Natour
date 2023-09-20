@@ -1,46 +1,11 @@
 const express = require('express');
 const userController = require('../controllers/userController');
+const authController = require('../controllers/authController');
+
 const router = express.Router();
 
-const getAllUsers = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'Not Implemented',
-  });
-};
-
-const getUsers = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'Not Implemented',
-  });
-};
-const getUser = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'Not Implemented',
-  });
-};
-
-const createUsers = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'Not Implemented',
-  });
-};
-
-const updateUser = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'Not Implemented',
-  });
-};
-const deleteUser = (req, res) => {
-  res.status(500).json({
-    status: 'error',
-    message: 'Not Implemented',
-  });
-};
+router.post('/signup', authController.signup);
+router.post('/login', authController.login);
 
 router
   .route('/')
